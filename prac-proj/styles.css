@@ -1,0 +1,22 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#hero {
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-weight: 700;
+}
