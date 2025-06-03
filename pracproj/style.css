@@ -22,6 +22,9 @@ h1 {
     padding: 12px;
     border-radius: 50%;
 }
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(13 110 253);
+}
 @media (max-width: 767px) {
     .carousel-item img {
         height: 40vh;

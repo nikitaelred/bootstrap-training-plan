@@ -24,14 +24,14 @@
 
     <link rel="stylesheet" href="/pracproj/style.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="200">
     <header>
       <!--Navbar start-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top"
       >
         <div class="container-fluid">
-          <a class="navbar-brand fs-2" href="#"
+          <a class="navbar-brand fs-2" href="/pracproj/index.html"
             >Techno-<span class="text-primary">Web</span></a
           >
           <button
@@ -49,19 +49,19 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-primary"
+                  class="nav-link"
                   aria-current="page"
-                  href="#"
+                  href="#carouselExampleCaptions"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="#services"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -70,19 +70,19 @@
                   Services
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">SEO</a></li>
-                  <li><a class="dropdown-item" href="#">Web design</a></li>
+                  <li><a class="dropdown-item" href="/pracproj/seo.html">SEO</a></li>
+                  <li><a class="dropdown-item" href="/pracproj/web.html">Web design</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Graphic Design</a>
+                    <a class="dropdown-item" href="/pracproj/design.html">Graphic Design</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Team</a>
+                <a class="nav-link" href="#team">Our Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#connect">Contact</a>
               </li>
             </ul>
           </div>
@@ -180,7 +180,7 @@
       <!--Banner end-->
     </header>
     <!--About start-->
-    <section class="about my-3 my-md-5">
+    <section class="about my-3 my-md-5" id="about">
       <div class="container">
         <div>
           <h1 class="text-center my-3 my-md-5" data-aos="fade-up" data-aos-offset="200">
@@ -307,7 +307,7 @@
     <!--About end-->
     <!--Services start-->
     <section
-      class="services py-4 py-md-5 bg-light"
+      class="services py-4 py-md-5 bg-light" id="services"
       data-aos="fade-up"
       data-aos-offset="200"
     >
@@ -414,7 +414,7 @@
     <section
       class="team my-4 my-md-5 text-center"
       data-aos="fade-up"
-      data-aos-offset="200"
+      data-aos-offset="200" id="team"
     >
       <div class="container">
         <div>
@@ -472,7 +472,7 @@
     </section>
     <!--Team end-->
     <!--Connect start-->
-    <section class="contact py-3 py-md-5" data-aos="fade-up" data-aos-offset="200">
+    <section class="contact py-3 py-md-5" data-aos="fade-up" id="connect" data-aos-offset="200">
       <div class="container">
         <div>
           <h1 class="text-center">
