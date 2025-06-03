@@ -18,14 +18,20 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/pracproj2/style.css" />
+    <link rel="icon" href="/pracproj2/img/favicon.ico" type="image/x-icon" />
     <title>Frontend Bootcamp</title>
   </head>
   <body>
     <!-- Navbar start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
-        <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+        <a href="/pracproj2/index.html" class="navbar-brand">Frontend Bootcamp</a>
 
         <button
           class="navbar-toggler"
@@ -39,13 +45,13 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#learn" class="nav-link">What You'll Learn</a>
+              <a href="/pracproj2/what-u-learn.html" class="nav-link">What You'll Learn</a>
             </li>
             <li class="nav-item">
-              <a href="#questions" class="nav-link">Questions</a>
+              <a href="/pracproj2/questions.html" class="nav-link">Questions</a>
             </li>
             <li class="nav-item">
-              <a href="#instructors" class="nav-link">Instructors</a>
+              <a href="/pracproj2/instructors.html" class="nav-link">Instructors</a>
             </li>
           </ul>
         </div>
@@ -86,11 +92,17 @@
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
           <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
-
-          <div class="input-group news-input">
-            <input type="text" class="form-control" placeholder="Enter Email" />
-            <button class="btn btn-dark btn-lg" type="button">Submit</button>
-          </div>
+          <form action="" class="w-50">
+            <div class="input-group news-input">
+              <input
+                type="email"
+                required
+                class="form-control"
+                placeholder="Enter Email"
+              />
+              <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -153,11 +165,7 @@
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
-            <img
-              src="/pracproj2/img/fundamentals.svg"
-              class="img-fluid"
-              alt=""
-            />
+            <img src="/pracproj2/img/fundamentals.svg" class="img-fluid" alt="" />
           </div>
           <div class="col-md p-5">
             <h2>Learn The Fundamentals</h2>
@@ -484,9 +492,81 @@
     </section>
     <!-- Contact & Map end -->
     <!-- Footer start-->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
+    <footer class="pt-5 bg-dark text-white text-center position-relative">
       <div class="container">
-        <p class="lead">Copyright &copy; 2025</p>
+        <div class="row g-2">
+          <div class="col-md-6 text-start">
+            <a href="/pracproj2/index.html" class="text-decoration-none fs-5 text-white"
+              >Frontend Bootcamp</a
+            >
+            <p class="text-white text-start mt-3 fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              accusamus nobis sed cupiditate iusto? Quibusdam.
+            </p>
+          </div>
+          <div class="col-md-3 text-start">
+            <a href="#" class="text-decoration-none fs-5 text-start text-white"
+              >Quick links</a
+            >
+            <ul class="nav flex-column  pt-3">
+              <li class="nav-item px-0">
+                <a class="nav-link px-0 py-0 pb-2 active" href="/pracproj2/what-u-learn.html">What You'll Learn</a>
+              </li>
+              <li class="nav-item px-0">
+                <a class="nav-link px-0" href="/pracproj2/questions.html">Questions</a>
+              </li>
+              <li class="nav-item px-0">
+                <a class="nav-link px-0" href="/pracproj2/instructors.html">Instructors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 text-start">
+            <a href="#" class="text-decoration-none fs-5 text-start text-white"
+              >Follow on</a
+            >
+            <ul class="list-inline pt-3">
+              <li class="list-inline-item">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="text-decoration-none text-primary"
+                >
+                  <i class="fab fa-facebook text-white"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  class="text-decoration-none text-info"
+                >
+                  <i class="fab fa-twitter text-white"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="text-decoration-none text-danger"
+                >
+                  <i class="fab fa-instagram text-white"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="text-decoration-none text-primary"
+                >
+                  <i class="fab fa-linkedin text-white"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-4 border-top p-2">
+        <p class="lead m-0 fs-6">Copyright &copy; 2025</p>
 
         <a href="#" class="position-absolute bottom-0 end-0 p-5">
           <i class="bi bi-arrow-up-circle h1"></i>
@@ -504,48 +584,82 @@
     >
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Fill out this form and we will get back to you</p>
-            <form>
+          <form id="enrollment-form">
+            <div class="modal-header">
+              <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">Fill out this form and we will get back to you</p>
+
               <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                  First Name:
-                </label>
-                <input type="text" class="form-control" id="first-name" />
+                <label for="first-name" class="col-form-label"
+                  >First Name:</label
+                >
+                <input
+                  type="text"
+                  required
+                  class="form-control"
+                  id="first-name"
+                />
               </div>
               <div class="mb-3">
                 <label for="last-name" class="col-form-label">Last Name:</label>
-                <input type="text" class="form-control" id="last-name" />
+                <input
+                  type="text"
+                  required
+                  class="form-control"
+                  id="last-name"
+                />
               </div>
               <div class="mb-3">
                 <label for="email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email" />
+                <input type="email" required class="form-control" id="email" />
               </div>
               <div class="mb-3">
                 <label for="phone" class="col-form-label">Phone:</label>
-                <input type="tel" class="form-control" id="phone" />
+                <input
+                  type="tel"
+                  required
+                  class="form-control"
+                  id="phone"
+                  pattern="[\d\s\-\(\)]{10,20}"
+                  maxlength="20"
+                  oninput="this.value = this.value.replace(/[^0-9\s\-\(\)]/g, '')"
+                />
               </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Submit</button>
-          </div>
+              <div
+                id="success-message"
+                class="alert alert-success d-none"
+                role="alert"
+              >
+                Form submitted successfully!
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary" id="submit-btn">
+                <span id="submit-text">Submit</span>
+                <span
+                  id="spinner"
+                  class="spinner-border spinner-border-sm d-none"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

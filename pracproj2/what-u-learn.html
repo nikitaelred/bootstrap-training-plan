@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/pracproj2/style.css" />
+    <link rel="icon" href="/pracproj2/img/favicon.ico" type="image/x-icon" />
+    <title>Frontend Bootcamp</title>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="/pracproj2/index.html" class="navbar-brand">Frontend Bootcamp</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="/pracproj2/what-u-learn.html" class="nav-link">What You'll Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="/pracproj2/questions.html" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="/pracproj2/instructors.html" class="nav-link">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Hero Section -->
+    <section class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-5 fw-bold">What You'll Learn</h1>
+        <p class="lead">
+          Gain practical skills and hands-on experience with our course.
+        </p>
+      </div>
+    </section>
+
+    <!-- Learning Outcomes Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-code-slash display-6 text-primary mb-3"></i>
+                <h5 class="card-title fw-semibold">Modern Web Development</h5>
+                <p class="card-text">
+                  Learn to build responsive websites using HTML, CSS,
+                  JavaScript, and modern frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-diagram-3 display-6 text-primary mb-3"></i>
+                <h5 class="card-title fw-semibold">Project Architecture</h5>
+                <p class="card-text">
+                  Understand how to plan and structure scalable, maintainable
+                  applications.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-bar-chart-line display-6 text-primary mb-3"></i>
+                <h5 class="card-title fw-semibold">Data & Analytics</h5>
+                <p class="card-text">
+                  Work with real-world data to derive insights using
+                  visualization and analysis tools.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-laptop display-6 text-primary mb-3"></i>
+                <h5 class="card-title fw-semibold">UI/UX Design Principles</h5>
+                <p class="card-text">
+                  Explore user-centric design to create engaging and intuitive
+                  digital products.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-git display-6 text-primary mb-3"></i>
+                <h5 class="card-title fw-semibold">Version Control</h5>
+                <p class="card-text">
+                  Master Git and GitHub to collaborate effectively and manage
+                  code changes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-people display-6 text-primary mb-3"></i>
+                <h5 class="card-title fw-semibold">Team Collaboration</h5>
+                <p class="card-text">
+                  Develop soft skills and workflows for working in agile,
+                  cross-functional teams.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map start -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Phone:</span> (333) 333-3333
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span> (555)
+                enroll@frontendbc.test
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email:</span>
+                student@frontendbc.test
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact & Map end -->
+    <!-- Footer start-->
+    <footer class="pt-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-md-6 text-start">
+            <a href="/pracproj2/index.html" class="text-decoration-none fs-5 text-white"
+              >Frontend Bootcamp</a
+            >
+            <p class="text-white text-start mt-3 fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              accusamus nobis sed cupiditate iusto? Quibusdam.
+            </p>
+          </div>
+          <div class="col-md-3 text-start">
+            <a href="#" class="text-decoration-none fs-5 text-start text-white"
+              >Quick links</a
+            >
+            <ul class="nav flex-column pt-3">
+              <li class="nav-item px-0">
+                <a class="nav-link px-0 py-0 pb-2 active" href="/pracproj2/what-u-learn.html"
+                  >What You'll Learn</a
+                >
+              </li>
+              <li class="nav-item px-0">
+                <a class="nav-link px-0" href="/pracproj2/questions.html">Questions</a>
+              </li>
+              <li class="nav-item px-0">
+                <a class="nav-link px-0" href="/pracproj2/instructors.html">Instructors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 text-start">
+            <a href="#" class="text-decoration-none fs-5 text-start text-white"
+              >Follow on</a
+            >
+            <ul class="list-inline pt-3">
+              <li class="list-inline-item">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="text-decoration-none text-primary"
+                >
+                  <i class="fab fa-facebook text-white"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  class="text-decoration-none text-info"
+                >
+                  <i class="fab fa-twitter text-white"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="text-decoration-none text-danger"
+                >
+                  <i class="fab fa-instagram text-white"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="text-decoration-none text-primary"
+                >
+                  <i class="fab fa-linkedin text-white"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-4 border-top p-2">
+        <p class="lead m-0 fs-6">Copyright &copy; 2025</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- Footer end-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <script src="/pracproj2/script.js"></script>
+  </body>
+</html>
