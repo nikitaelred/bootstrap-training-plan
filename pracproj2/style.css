@@ -9,7 +9,11 @@ body::before {
   height: 100%;
   border-radius: 10px;
 }
-
-@media (min-width: 768px) {
-  
+li.list-group-item {
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+  .container{
+  padding: 0px 20px;
+}
 }
